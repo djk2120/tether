@@ -26,9 +26,9 @@ A utility to tether cesm cases
    - update the statuses in joblist.txt
 
 ## directory structure
- - put your joblist and shell scripts together in any directory, need not be in this directory
+ - put your joblist and shell scripts together in one directory, need not be in this directory
  - call tether.sh from within THAT directory
- - e.g. for my example here
+ - e.g. for my example here, cd example, and then:
    - ../tether.sh joblist.txt ../cheyenne.template
 
 ## logs
