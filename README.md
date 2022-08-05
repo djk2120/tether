@@ -15,6 +15,7 @@ A utility to tether cesm cases
  - file to define your run sequence
  - jobname,caseroot,helper_script,status
  - all helper scripts must be executable!
+   - if you don't need a helper script, put: none
  - status progresses from waiting->queued->submitted
  - joblist should be in order, with first job queued, and the rest waiting
 
