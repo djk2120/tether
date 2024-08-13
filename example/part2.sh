@@ -1,2 +1,2 @@
-echo PART2
-./xmlchange CONTINUE_RUN=TRUE
+#!/bin/bash
+echo "! HELLO WORLD" >> user_nl_clm

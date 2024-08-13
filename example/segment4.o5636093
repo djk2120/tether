@@ -1,0 +1,63 @@
+jobname: segment1
+thiscase: /glade/work/djk2120/ctsm_test/cime/scripts/testcase
+setup: none
+status: submitted
+jobname: segment2
+thiscase: /glade/work/djk2120/ctsm_test/cime/scripts/testcase
+setup: ./part2.sh
+status: submitted
+jobname: segment3
+thiscase: /glade/work/djk2120/ctsm_test/cime/scripts/testcase
+setup: ./part3.sh
+status: submitted
+jobname: segment4
+thiscase: /glade/work/djk2120/ctsm_test/cime/scripts/testcase
+setup: ./part4.sh
+status: queued
+---------------------------------------
+RUNNING setup script:
+./part4.sh /glade/work/djk2120/ctsm_test/cime/scripts/testcase /glade/work/djk2120/ctsm_test/cime/scripts/testcase
+/glade/u/home/djk2120/tether/tether.sh: line 29: ./part4.sh: No such file or directory
+---------------------------------------
+submitting case: testcase
+  2024-08-13 11:20:40 atm 
+Create namelist for component datm
+   Calling /glade/work/djk2120/ctsm_test/components/cdeps/datm/cime_config/buildnml
+  2024-08-13 11:20:42 lnd 
+Create namelist for component clm
+   Calling /glade/work/djk2120/ctsm_test/cime_config/buildnml
+NOTE: LND_TUNING_MODE is clm6_0_GSWP3v1 which is NOT tuned, but is based on clm5_0_GSWP3v1
+  2024-08-13 11:20:46 ice 
+Create namelist for component sice
+   Calling /glade/work/djk2120/ctsm_test/cime/CIME/non_py/src/components/stub_comps_nuopc/sice/cime_config/buildnml
+  2024-08-13 11:20:46 ocn 
+Create namelist for component socn
+   Calling /glade/work/djk2120/ctsm_test/cime/CIME/non_py/src/components/stub_comps_nuopc/socn/cime_config/buildnml
+  2024-08-13 11:20:46 rof 
+Create namelist for component mosart
+   Calling /glade/work/djk2120/ctsm_test/components/mosart//cime_config/buildnml
+  2024-08-13 11:20:46 glc 
+Create namelist for component sglc
+   Calling /glade/work/djk2120/ctsm_test/cime/CIME/non_py/src/components/stub_comps_nuopc/sglc/cime_config/buildnml
+  2024-08-13 11:20:46 wav 
+Create namelist for component swav
+   Calling /glade/work/djk2120/ctsm_test/cime/CIME/non_py/src/components/stub_comps_nuopc/swav/cime_config/buildnml
+  2024-08-13 11:20:46 esp 
+Create namelist for component sesp
+   Calling /glade/work/djk2120/ctsm_test/cime/CIME/non_py/src/components/stub_comps_nuopc/sesp/cime_config/buildnml
+  2024-08-13 11:20:46 cpl 
+Create namelist for component drv
+   Calling /glade/work/djk2120/ctsm_test/components/cmeps/cime_config/buildnml
+Writing nuopc_runconfig for components ['CPL', 'ATM', 'LND', 'ROF']
+Checking that inputdata is available as part of case submission
+Loading input file list: 'Buildconf/ctsm.input_data_list'
+Loading input file list: 'Buildconf/cpl.input_data_list'
+Loading input file list: 'Buildconf/datm.input_data_list'
+Loading input file list: 'Buildconf/mosart.input_data_list'
+Check case OK
+submit_jobs case.run
+Submit job case.run
+Submitting job script qsub -q main -l walltime=12:00:00 -A P08010000 -l job_priority=regular -v ARGS_FOR_SCRIPT='--completion-sets-continue-run' .case.run
+Submitted job id is 5636127.desched1
+Submitted job case.run with id 5636127.desched1
+/glade/u/home/djk2120/tether/ex2
