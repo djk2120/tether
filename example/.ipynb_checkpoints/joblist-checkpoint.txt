@@ -1,4 +1,0 @@
-segment1,/glade/work/djk2120/ctsm_test/cime/scripts/testcase,none,queued
-segment2,/glade/work/djk2120/ctsm_test/cime/scripts/testcase,./part2.sh,waiting
-segment3,/glade/work/djk2120/ctsm_test/cime/scripts/testcase,./part3.sh,waiting
-segment4,/glade/work/djk2120/ctsm_test/cime/scripts/testcase,./part4.sh,waiting
